@@ -1,0 +1,25 @@
+           @charset "UTF-8";
+/* 
+Theme Name: Global NGO
+Description: Child theme for Canvas 
+Template: canvas 
+Version: 1.4.18.2014
+*/
+@import url(../canvas/style.css);
+
+@import 'compass';
+@import 'colors';
+@import 'woo-output';
+@import 'header';
+@import 'home';
+@import 'typography';
+@import 'icomoon-pir';
+@import 'footer';
+@import 'tables';
+@import 'events';
+@import 'widgets';
+@import 'content-area';
+
+#inner-wrapper {
+	background-color: #FFF;
+}

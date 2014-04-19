@@ -1,0 +1,193 @@
+/*==================================================
+ * HOME STYLINGS
+ * ===============================================*/
+
+
+#home_cta {
+	background-color:$bright_blue;
+	padding: 2em 1.618em 0;
+	margin-bottom: 2em;
+	position:relative;
+	overflow:hidden; 
+
+	h1, p {
+		color: #FFF;
+	}
+
+	h1 {
+		font-size: 2.6em;
+		line-height: 1.3em;
+		font-weight: 100;
+	}
+
+	.fivecol-three, .fivecol-two {
+		margin-bottom: 2%;
+	}
+
+	&:before {
+	  content: ""; 
+	  position:absolute; 
+	  z-index: 1; 
+	  width:60%;  
+	  top: -10px; 
+	  height: 10px; 
+	  left: 20%;
+	  right: 20%; 
+	  border-radius: 100px / 5px; 
+		-webkit-box-shadow:0 0 20px rgba(0,0,0,0.4);
+		box-shadow:0 0 20px rgba(0,0,0,0.4);
+	}
+}
+
+.home {
+
+	.entry {
+
+		h2 {
+			font-size: 38px;
+			letter-spacing: -.05em;
+			font-weight:100;
+			margin-bottom: .15em;
+
+			b, strong {
+				font-weight:900;
+			}
+		}
+
+		h4, h5 {
+			text-align: right;
+			margin-bottom: 0;
+			font-weight: normal;
+
+		}
+
+		h4 a {
+			color: $link_color;
+
+		}
+
+		h5 {
+			color: $link_color;
+			font-size: 14px;
+			font-style: italic;
+		}
+
+	}
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1023px) {
+	#home_cta:after{
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 25%;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+	#home_cta:after{
+		width: 90%;
+	    left:5%;
+	    right:5%;
+	}
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 2000px) {
+	#home_cta:after{
+		width: 80%;
+	    left:10%;
+	    right:10%;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+	body.home #nav-container {
+		margin-bottom: 0em;
+	}
+}
+
+.gform_wrapper #gform_1 {
+	.top_label .gfield_label {
+		display: none;
+	}
+	input {
+		color: $bright_blue;
+		font-size: 16px;
+		margin-bottom: 0;
+		border: none;
+		padding: 7px 0 7px 6px !important;
+		
+		&.button {
+			background: $link_color;
+			text-transform: initial;
+			font-size: 18px;
+			padding: 7px 16px !important;
+			&:hover {
+				background: darken($link_color, 5%);
+			}
+			&:active {
+			}
+		}
+	}
+	li.full_width input {
+		width: 98.5%;
+	}
+
+	.gform_footer {
+		padding: 5px 0 10px 0;
+		margin: 10px 0 0 0;
+		clear: both;
+	}
+
+}
+
+#gform_widget-2.widget h3 {
+	padding:0;
+	margin: 0;
+}
+
+#gform_wrapper_6 {
+	.top_label .gfield_label {
+		display: none;
+	}
+	input {
+		color: $bright_blue;
+		font-size: 16px;
+		margin-bottom: 0;
+		border-width: 1px;
+		border-color: $light_blue;
+		padding: 7px 0 7px 6px !important;
+
+	}
+	.button {
+		background: $link_color;
+		text-transform: initial;
+		font-size: 13px;
+		padding: 4px 10px !important;
+		float: right;
+		margin-right: -5px;
+		&:hover {
+			background: darken($link_color, 5%);
+		}
+		&:active {
+		}
+	}
+	.gform_footer {
+		margin-top: 0;
+		padding-top: 0;
+		padding-bottom: 30px;
+	}
+
+	li.full_width input {
+		width: 99%;
+	}
+
+}
+
+
+
+body.home .twocol-one {
+	margin-bottom: 0;
+}

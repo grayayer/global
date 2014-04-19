@@ -1,0 +1,153 @@
+/******* navigation ************/
+
+#nav-container #navigation {
+	background-color: #FFF;
+}
+
+@media only screen and (min-width:768px) {
+	ul.nav li a, #navigation ul.rss a, #navigation .cart-contents, #navigation ul.rss, #navigation ul.cart .cart_list a{
+		font:normal 14px/1.2em "Trebuchet MS", Tahoma, sans-serif;color:#173B4F;
+	}
+ #navigation ul.rss li a:before {
+ 	color:#173B4F;}
+
+#navigation ul.nav > li a:hover, #navigation ul.nav > li:hover a, #navigation ul.nav li ul li a, #navigation ul.cart > li:hover > a, #navigation ul.cart > li > ul > div, #navigation ul.cart > li > ul > div p, #navigation ul.cart > li > ul span, #navigation ul.cart .cart_list a, #navigation ul.nav li.current_page_item a, #navigation ul.nav li.current_page_parent a, #navigation ul.nav li.current-menu-ancestor a, #navigation ul.nav li.current-cat a, #navigation ul.nav li.current-menu-item a { color:#6BC6F0!important; }
+
+#navigation ul.nav > li a:hover, #navigation ul.nav > li:hover, #navigation ul.nav li ul, #navigation ul.cart > li:hover, #navigation ul.cart > li > ul > div, #navigation ul.nav li.current_page_item a, #navigation ul.nav li.current_page_parent a, #navigation ul.nav li.current-menu-ancestor a, #navigation ul.nav li.current-cat a, #navigation ul.nav li.current-menu-item a{background-color:#FFF!important}
+
+#navigation ul.nav li ul,
+#navigation ul.cart > li > ul > div {
+	border: 0px solid #dbdbdb;
+	box-shadow: 0 2px 4px #dbdbdb;	
+}
+
+#navigation ul.nav > li > ul  { left: 0; }
+
+#navigation ul.nav > li  { border-right: 0px solid #dbdbdb; }
+#navigation ul.nav > li > ul  { left: 0; }
+
+#navigation  { box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; }
+#navigation ul li:first-child, #navigation ul li:first-child a { border-radius:0px 0 0 0px; -moz-border-radius:0px 0 0 0px; -webkit-border-radius:0px 0 0 0px; }
+
+#navigation {background:#FFF;border-top:0px solid #dbdbdb;border-bottom:0px solid #dbdbdb;border-left:0px solid #dbdbdb;border-right:0px solid #dbdbdb;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;}
+
+#top ul.nav li a { font:300 12px/1.6em "ars_maquette_pro", Tahoma, sans-serif;color:#ddd; }
+
+}
+
+#navigation ul.nav {
+	li#menu-item-28 a{
+		position: relative;
+		top: -2.5px;
+		background: transparent;
+		&:hover {
+			background:transparent !important;
+		}
+	}
+}
+
+/*==================================================
+ * HEADER SCSS
+ * ===============================================*/
+
+
+/*styling for the search bar in primary navigation*/
+#nav-search {
+margin-right: 9px;
+top: 10px;
+}
+
+#nav-search .icon-search {
+position: absolute;
+right: 9px;
+top: 0;
+}
+
+.searchform .icon-search:before {
+	font-family: icomoon-pir;
+}
+
+#main-nav li a [class^="icon-"] {
+	position: relative;
+	top: 2px;
+}
+
+
+#nav-container {
+	border-bottom: 10px solid $bright_green;
+}
+
+.home #nav-container {
+	border-bottom: none;
+	&:after {
+		top: 0px;
+	}
+}
+
+/*==================================================
+ * Drop shadow effect with box-shadow
+ * ===============================================*/
+
+@media only screen and (min-width: 768px){
+	#nav-container{
+	    position:relative;
+	/* deactivated so the line is only in a small portion of the middle    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+	    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3); */
+	}
+
+
+	#nav-container:after{
+	    content:"";
+	    position:absolute;
+	    z-index:-1;
+	    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.4);
+	    box-shadow:0 0 20px rgba(0,0,0,0.4);
+	    bottom:0px;
+	    left:20%;
+	    right:20%;
+	    width:60%;
+	    height:25%;
+	    -moz-border-radius:100%;
+	    border-radius:100%;
+	    top: 44px;
+	}
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1023px) {
+	#nav-container:after{
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 25%;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+	#nav-container:after{
+		width: 90%;
+	    left:5%;
+	    right:5%;
+	}
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 2000px) {
+	#nav-container:after{
+		width: 80%;
+	    left:10%;
+	    right:10%;
+	}
+}
+
+/* does not show the shadow on the homepage*/
+body.home #nav-container:after{
+	content: none;
+} 
+
+/* OFF CANVAS NAVIGATION TWEAKS */
+
+@media only screen and (max-width: 768px) {
+	#nav-container #navigation h3 {
+		display: none;
+	}
+}

@@ -1,0 +1,26 @@
+/*==================================================
+ * CONTENT AREA STYLINGS
+ * ===============================================*/
+
+.entry {
+
+	img {
+		border: none;
+		padding: 0;
+	}
+
+	.gform_body {
+		img {
+			border: 2px solid #efefef;
+			padding: 3px;
+			margin-top: 5px;
+		}
+		.gfield_checkbox li {
+			margin-bottom: 0;
+		}
+		.gfield {
+			margin-bottom: 20px;
+		}
+	}
+
+}

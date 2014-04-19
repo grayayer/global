@@ -1,0 +1,98 @@
+/* EVENTS */
+
+.widget.widget_em_widget ul li {
+	border: 1px $light_blue solid;
+	padding: 10px;
+	overflow: auto;
+	display: block;
+
+
+	div.upcoming_event_date_box { /*the big date box that floats to the left of the content*/
+		background: $bright_blue;
+		color: $bg_color;
+		float: left;
+		padding: 5px 12px;
+		margin: 0 12px 10px 0;
+		display: block;
+		width: 9%;
+		@include border-radius(7px);
+
+		.numeral_date {
+			font-weight: normal;
+			font-size: 22px;
+			text-align: center;
+			display: block;			
+		}
+
+		.short_month {
+			text-align: center;
+			display: block;
+			line-height: 18px;
+		}
+	}
+
+	.ue_details {		
+		float: left;
+		display: inline-block;
+		line-height: 1.4em;
+		max-width: 75%;
+
+		a, a:hover {
+			text-decoration: none;
+			color: $paragraph;
+			line-height: 19px;
+
+			.inside_title {
+				color: $bright_blue;
+				display: block;
+				margin-bottom: 7px;
+				font-size: 20px;
+				font-weight: normal;
+				font-weight: 500;
+			}
+
+			.event-title, .event-date, .event-location {
+				display: block;
+			}
+
+			.event-title, .event-date {
+				font-size: 15px;
+			}
+
+			.ue_description {
+				padding-top: 10px;
+				display: inline-block;
+				clear: both;
+			}
+
+		}
+	}
+
+
+
+
+	li.all-events-link a {
+		text-decoration: underline;
+		&:before {
+			font-family: 'icomoon-pir';
+			content: "\e617";
+			padding-right: 5px;
+			text-decoration: none !important;
+			color: $bg_color;
+			display: block;
+			float: left;
+			position: relative;
+			top: 2px;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+#comments, /*hides comments*/
+.post-meta, /*hides post author below event title*/
+.post-entries /*hides next and previous event links*/
+ {
+     display: none;
+}

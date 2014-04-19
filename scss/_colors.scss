@@ -1,0 +1,16 @@
+/*color definitions*/
+
+$bg_color: #FFF;
+$light_green: #A7DDC1;
+$link_color: darken($light_green, 30%);
+$link_visited: adjust-hue(saturate(darken($light_green, 40%), 20%), 35%);
+$paragraph: #173B4F; /*a dark navy blue*/
+$contrast: #6BC6F0;
+$bright_blue: #6BC6F0;
+$light_blue: #ABD8ED;
+$dark_green: #24593D;
+$bright_green: #59BE8B;
+$link_hover_color: darken($light_green, 30%);
+$bright_orange: #FF8400;
+$dirty_yellow: #F4D338;
+$table_accent: #DAEAF1;

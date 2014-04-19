@@ -1,0 +1,27 @@
+#logo .site-title, #logo .site-description { display:none; }
+
+body {
+	background-repeat:no-repeat;
+	background-position:top left;
+	background-attachment:scroll;
+	border-top:0px solid #000000;
+	background-color: $paragraph;
+}
+
+#header {background-repeat:no-repeat;background-position:left top;margin-top:0px;margin-bottom:0px;padding-top:30px;padding-bottom:30px;border:0px solid ;}
+
+#logo .site-title a {font:bold 40px/1em "Trebuchet MS", Tahoma, sans-serif;color:#222222;}
+
+#logo .site-description {font:300 13px/1em "Trebuchet MS", Tahoma, sans-serif;color:#999999;}
+
+#header-container{background-color:#173B4F;}
+#nav-container{background:#FFF;}
+#nav-container{border-top:0px solid #dbdbdb;border-bottom:0px solid #dbdbdb;border-left:none;border-right:none;}
+#nav-container #navigation ul#main-nav > li:first-child{border-left: 0px solid #dbdbdb;}
+#footer-widgets-container{background-color:#173B4F}
+#footer-widgets{border:none;}
+#footer-container{background-color:#173B4F}
+#footer-container{border-top:0px solid #dbdbdb;}
+#footer {border-width: 0 !important;}
+
+

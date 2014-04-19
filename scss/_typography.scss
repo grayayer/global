@@ -1,0 +1,476 @@
+/***********  typography  ************/
+
+@font-face {
+    font-family: 'ars_maquette_pro';
+    src: url('fonts/arsmaquettepro/arsmaquettepro-light.eot');
+    src: url('fonts/arsmaquettepro/arsmaquettepro-light.eot?#iefix') format('embedded-opentype'),
+         url('fonts/arsmaquettepro/arsmaquettepro-light.woff') format('woff'),
+         url('fonts/arsmaquettepro/arsmaquettepro-light.ttf') format('truetype'),
+         url('fonts/arsmaquettepro/arsmaquettepro-light.svg#ars_maquette_prolight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ars_maquette_pro';
+    src: url('fonts/arsmaquettepro/arsmaquettepro-lightitalic.eot');
+    src: url('fonts/arsmaquettepro/arsmaquettepro-lightitalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/arsmaquettepro/arsmaquettepro-lightitalic.woff') format('woff'),
+         url('fonts/arsmaquettepro/arsmaquettepro-lightitalic.ttf') format('truetype'),
+         url('fonts/arsmaquettepro/arsmaquettepro-lightitalic.svg#ars_maquette_prolight_italic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'ars_maquette_pro';
+    src: url('fonts/arsmaquettepro/arsmaquettepro-regular.eot');
+    src: url('fonts/arsmaquettepro/arsmaquettepro-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/arsmaquettepro/arsmaquettepro-regular.woff') format('woff'),
+         url('fonts/arsmaquettepro/arsmaquettepro-regular.ttf') format('truetype'),
+         url('fonts/arsmaquettepro/arsmaquettepro-regular.svg#ars_maquette_pro') format('svg');
+    font-weight: 300;   
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ars_maquette_pro';
+    src: url('fonts/arsmaquettepro/arsmaquettepro-regularitalic.eot');
+    src: url('fonts/arsmaquettepro/arsmaquettepro-regularitalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/arsmaquettepro/arsmaquettepro-regularitalic.woff') format('woff'),
+         url('fonts/arsmaquettepro/arsmaquettepro-regularitalic.ttf') format('truetype'),
+         url('fonts/arsmaquettepro/arsmaquettepro-regularitalic.svg#ars_maquette_proitalic') format('svg');
+    font-weight: 300;   
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'ars_maquette_pro';
+    src: url('fonts/arsmaquettepro/arsmaquettepro-bold.eot');
+    src: url('fonts/arsmaquettepro/arsmaquettepro-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/arsmaquettepro/arsmaquettepro-bold.woff') format('woff'),
+         url('fonts/arsmaquettepro/arsmaquettepro-bold.ttf') format('truetype'),
+         url('fonts/arsmaquettepro/arsmaquettepro-bold.svg#ars_maquette_probold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ars_maquette_pro';
+    src: url('fonts/arsmaquettepro/arsmaquettepro-bolditalic.eot');
+    src: url('fonts/arsmaquettepro/arsmaquettepro-bolditalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/arsmaquettepro/arsmaquettepro-bolditalic.woff') format('woff'),
+         url('fonts/arsmaquettepro/arsmaquettepro-bolditalic.ttf') format('truetype'),
+         url('fonts/arsmaquettepro/arsmaquettepro-bolditalic.svg#ars_maquette_probold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+/* basic styles */
+
+html, body.page, body, p, h1, h2, h3, h4, h5, strong {
+	color: $paragraph;
+}
+
+body, p { font:300 14px/1.5em ;color:$paragraph; }
+
+
+body {
+	font-size: 13px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $bright_blue;
+	a {
+		color: $link_color;		
+	}
+}
+
+h2, h3 {
+	color: $paragraph;
+}
+
+h1 { font-size: 1.7em; line-height: 1.9em; margin-bottom: 0.6em;}
+h2 { font-size: 1.5em; line-height: 1.7em; margin-bottom: 0.4em;}
+h3 { font-size: 1.3em; line-height: 1.5em; margin-bottom: 0.2em;}
+h4 { font-size: 1.1em; line-height: 1.3em; margin-bottom: 0.1em;}
+h5 { font-size: 17px; line-height: 24px; }
+h6 { font-size: 14px; line-height: 21px; }
+
+.module-img,
+h1#logo span,
+.widget_categories a,
+.widget_categories a:hover,
+.widget_categories a:visited,
+.widget_archive a,
+.widget_archive a:hover,
+.widget_archive a:visited,
+.sf-menu li li:hover > a,
+.sf-menu li li:hover > a:hover,
+.sf-menu li li:hover > a:visited,
+.hybrid:hover h4 a,
+.module-container:hover h4 a,
+.fp_caption strong,
+.blurb-maker h4 a:hover {
+color: $light_green;
+}
+
+
+a, a:link {
+    color: $link_color;
+}
+
+a:hover {
+	text-decoration: none;
+	color: $link_hover_color;
+}
+
+a:visited {
+	color: $link_visited;
+}
+
+
+
+/* more specific */
+
+.fp_caption,
+.fp_caption strong,
+.header_blurb,
+.module-meta h4 a,
+.portfolio-filters .button, .title, .tk-ars-maquette-web,
+body, h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, p, ul, ol, li,
+ul.nav li a,
+#navigation ul.rss a,
+#navigation .cart-contents,
+#navigation ul.rss,
+#navigation ul.cart .cart_list a,
+.searchform input.s,
+#searchform input#s,
+#footer li,
+.woo-sc-button,
+.entry,
+.entry p {
+	font-family: "ars_maquette_pro",sans-serif !important; /*i have to include the important to overide the canvas settings
+	font-feature-settings: 			"kern" on, "liga" on, "calt" on, "ss05" 1, "ss06" 1, "ss09" 1, "ss10" 1;
+	-moz-font-feature-settings: 	"kern" on, "liga" on, "calt" on, "ss05" 1, "ss06" 1, "ss09" 1, "ss10" 1;
+	-moz-font-feature-settings: 	"kern" on, "liga" on, "calt" on, "ss05=1, ss06=1, ss09=1, ss10=1";
+	-webkit-font-feature-settings: 	"kern" on, "liga" on, "calt" on, "ss05" 1, "ss06" 1, "ss09" 1, "ss10" 1;
+	-ms-font-feature-settings: 		"kern" on, "liga" on, "calt" on, "ss05" 1, "ss06" 1, "ss09" 1, "ss10" 1;
+	-o-font-feature-settings:		"kern" on, "liga" on, "calt" on, "ss05" 1, "ss06" 1, "ss09" 1, "ss10" 1;	
+	*/
+}
+
+
+
+.page-title, .post .title, .page .title {
+	font-size: 28px;
+	line-height: 1.1em ;
+	color: $bright_blue;
+	font-weight: normal;
+}
+
+.post .title a:link, .post .title a:visited, .page .title a:link, .page .title a:visited {color:#222222}
+
+.post-meta { font:300 12px/1.5em ;color:#999999; }
+
+.entry, .entry p{ font:300 15px/1.5em ;color:$paragraph; }
+
+.post-more {
+	font:300 13px/1.5em ;
+	border-top:0px solid #e6e6e6;
+	border-bottom:0px solid #e6e6e6;
+}
+
+#post-author, #connect {border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;background-color:#fafafa}
+
+.nav-entries a, .woo-pagination { font:300 13px/1em ;color:#888; }
+
+.woo-pagination a, .woo-pagination a:hover {color:#888!important}
+
+.widget h3 {
+	font:bold 14px/1.2em ;
+	color:$paragraph;
+	border-bottom:1px solid #e6e6e6;
+	font-weight: normal;
+}
+
+.widget_recent_comments li, #twitter li { border-color: #e6e6e6;}
+
+.widget p, .widget .textwidget { font:300 13px/1.5em ;color:$paragraph; }
+
+.widget {font:300 13px/1.5em ;color:$paragraph;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;}
+
+#tabs .inside li a, .widget_woodojo_tabs .tabbable .tab-pane li a { font:bold 12px/1.5em ;color:$paragraph; }
+
+#tabs .inside li span.meta, .widget_woodojo_tabs .tabbable .tab-pane li span.meta { font:300 11px/1.5em ;color:#999999; }
+
+#tabs ul.wooTabs li a, .widget_woodojo_tabs .tabbable .nav-tabs li a { font:300 11px/2em ;color:#999999; }
+
+
+
+#footer, #footer p { font:300 13px/1.4em ;color:#999999; }
+
+#footer {background-color:173B4F;border-top:0px solid #dbdbdb;border-bottom:0px solid ;border-left:0px solid ;border-right:0px solid ;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;}
+
+
+
+
+.content li {
+	line-height: 170%;
+}
+
+blockquote, blockquote p {
+color: $bright_blue;
+}
+
+#section-content .content {
+	h1, h2, h3, h4 {
+		color: $bright_blue;
+		a {
+			text-decoration: none;
+		}
+	}
+
+	h1.title {
+		color: $bg_color;
+	}
+
+	a {
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+			color: $bg_color;
+			background: $link_color;
+		}
+		&.no-underline {
+			text-decoration: none !important;
+		}
+	}
+}
+
+.icon-cta-link:before {
+	content: "\e60c";
+	font-size: 1.4em;
+	position: relative;
+	top: 0.19em;
+}
+
+.super-icon {
+	vertical-align: super;
+	font-size: 0.8em;
+	margin-left: .3em;
+}
+
+.display-none {
+	display: none;
+}
+
+/********* NAVIGATION **************/
+
+
+.sf-menu > li.current-menu-item > a strong,
+.sf-menu > li.current_page_item > a strong,
+.sf-menu > li.current-menu-parent > a strong,
+.sf-menu > li.current-page-parent > a strong,
+.sf-menu > li.current_page_ancestor > a strong
+div.navigation .sf-menu > li:hover a strong {
+	color: #FFFFFF !important;
+}
+
+
+.sf-menu > li > a strong {
+	color: $light_green;
+}
+
+.sf-menu > li.current-menu-item > a strong,
+.sf-menu > li.current_page_item > a strong,
+.sf-menu > li.current-menu-parent > a strong,
+.sf-menu > li.current-page-parent > a strong,
+.sf-menu > li.current_page_ancestor > a strong
+	{
+	color: #FFF;
+}
+
+
+
+
+/* Dropdown Links */
+
+.sf-menu {
+    margin-top: 6%;
+
+    > li {
+		margin: 0 .5em;
+		@include border-radius(5px);
+	    white-space: nowrap;
+
+		ul {
+			background: $dark_green;
+			padding: 0;
+			margin-top: 15px;
+			@include border-radius(5px);
+			border: 1px solid $bg_color;
+
+			.sf-sub-indicator {
+				background-image: url("/images/dropdown_right.png");
+			}
+
+			li { //the submenus
+				background: transparent;
+				border-bottom: 1px solid $dark_green;
+				color: $bright_green;
+				margin: 0;
+			    border-left: 0 none !important;
+			    border-right: 0 none !important;				
+			&:hover {
+				border-left: 0 none !important;
+    			border-right: 0 none !important;
+    			&:first-of-type {
+    				@include border-top-radius(5px);
+    			}
+    			&:last-of-type {
+    				@include border-bottom-radius(5px);
+    			}    			
+			}
+
+				li { //the sub-submenus
+					background: $dark_green;
+					border-bottom: 1px solid $dark_green;
+					color: $bright_green;	
+					margin: 0;
+				    border-left: 0 none !important;
+				    border-right: 0 none !important;					
+
+				    &:hover {
+						border-left: 0 none !important;
+		    			border-right: 0 none !important;
+					}
+				}
+			}
+		}		
+	}
+}
+
+li#menu-item-148 .sub-menu .sub-menu {
+	left: 170px !important;
+}
+
+@media only screen and (min-width: 970px) and (max-width: 1280px) {
+	li#menu-item-148 .sub-menu .sub-menu {
+		left: 138px !important;
+	}
+}
+
+li#menu-item-144 .sub-menu .sub-menu {
+	left: -155px !important;
+}
+
+@media only screen and (min-width: 970px) and (max-width: 1280px) {
+	li#menu-item-144 .sub-menu .sub-menu {
+		left: -125px !important;
+	}
+}
+
+/******* other ************/
+
+.clearfix {
+	clear: both;
+}
+
+.content ul {
+list-style: disc outside;
+margin-left: 20px;
+}
+
+h2.board {
+	clear: both;
+	span.end-of-term {
+		float: right;
+		font-size: .6em;
+		white-space: nowrap;
+	}
+}
+
+.yellow_box {
+	background: #FFF9CC;
+	color: #736B4C;
+	border-color: #FFDB4F;
+
+	.yellow_box_content {
+		border: 1px solid #FFF;
+		padding: 10px;
+	}
+
+}
+
+
+/*blog typography*/
+#content div.post {
+	h4, h4 a, {
+		color: $link_color;
+	}
+}
+
+/********* widgets **************/
+
+#section-footer h5.footer-widget-title {
+	color: #A7DDC1 !important;
+	margin: 0 0 15px 0;
+	padding: 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.widget.widget_nav_menu {
+	margin-bottom: 5px;
+}
+
+/*event calender page*/
+#section-content table.em-calendar td.eventful a, table.em-calendar td.eventful-today a,
+#section-content a.em-calnav.full-link.em-calnav-prev,
+#section-content a.em-calnav.full-link.em-calnav-next,
+#section-content table.events-table a {
+	color: $bright_orange;
+	&:hover {
+		text-decoration:none;
+	}
+}
+
+
+#section-content table tbody tr td a {
+	color: $bg_color;
+	&:hover {
+		text-decoration:none;
+	}
+}
+
+.widget h3 {
+	border-bottom: none;
+	margin: 0;
+	font-size: 16px;
+}
+
+/******* FORMS ********/
+.gform_wrapper .gfield_required {
+	color: $bright_orange;
+}
+
+div.ginput_complex {
+	span input, span select { margin: 10px 0 0; }
+ 	span.ginput_full input { margin: 0; }
+}
+
+.gform_wrapper form ul.description li {
+	/*list-style: disc !important;*/
+	margin: 0 0 0 30px !important;
+	font-size: 1.1em;
+	list-style-position: outside;
+	list-style-image: url("images/list_style_image_double_arrows.png") !important;
+	font-family: ars_maquette_pro, sans-serif;
+}

@@ -1,0 +1,26 @@
+/* TABLE STYLES */
+
+table, table.sortable {
+	margin: 0;
+	th, th:hover {
+		background: $table_accent;
+		color: #000;
+		padding: 10px;
+		border: 1px solid $table_accent !important;
+	}
+	tr {
+		background-color: $bg_color;
+		td {
+			border: 1px solid $table_accent !important;
+			color: $paragraph;
+			background: none;
+			padding: 10px;
+			a {
+				color: $paragraph;
+			}
+		}
+		&:nth-child(even) {
+			background: $table_accent;
+		}
+	}
+}
