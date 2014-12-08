@@ -21,11 +21,7 @@ get_header();
 				<p>Registrieren Sie sich jetzt und bleiben Sie auf dem neuestem Stand der .ngo|.ong  Einführung und teilen Sie uns Ihr Interesse an der Reservierung eines Namens mit.</p>
 			</div>
 			<div class="fivecol-two last">
-<<<<<<< HEAD
 				<?php gravity_form(7, false, false, false, '', true, 12); ?>
-=======
-				<?php gravity_form(1, false, false, false, '', true, 12); ?>
->>>>>>> FETCH_HEAD
 			</div>
 		</div>
 	</div>
