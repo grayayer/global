@@ -14,3 +14,58 @@ $link_hover_color: darken($light_green, 30%);
 $bright_orange: #FF8400;
 $dirty_yellow: #F4D338;
 $table_accent: #DAEAF1;
+
+
+
+
+// Placeholder @mixin for Sass
+//
+// A mixin to style placeholders in HTML5 form elements.
+// Includes also a .placeholder class to be used with a polyfill e.g.
+// https://github.com/mathiasbynens/jquery-placeholder
+// Requires Sass 3.2.
+//
+// Example usage (.scss):
+// 
+// input {
+//   @include placeholder {
+//     /* styles for placeholder here */
+//   }
+// }
+//
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        @content;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin placeholder-focus {
+    &:focus::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:focus:-moz-placeholder { /* Firefox 18- */
+        @content;
+    }
+
+    &:focus::-moz-placeholder {  /* Firefox 19+ */
+        @content;
+    }
+
+    &:focus:-ms-input-placeholder {
+        @content;
+    }
+}

@@ -2,14 +2,22 @@
 
 .widget.widget_em_widget ul li {
 	border: 1px $light_blue solid;
+	/*green color scheme*/
+	border-color: lighten($light_green, 8%);
+
 	padding: 10px;
 	overflow: auto;
 	display: block;
-
+	border-radius: .75em;
+	background: lighten($light_green,15%); /*green color scheme*/
 
 	div.upcoming_event_date_box { /*the big date box that floats to the left of the content*/
-		background: $bright_blue;
-		color: $bg_color;
+		/*background: $bright_blue;
+		color: $bg_color; */
+		 /*green color scheme*/
+		background: $link_color;
+		color: lighten($light_green,15%);
+
 		float: left;
 		padding: 5px 12px;
 		margin: 0 12px 10px 0;
@@ -43,7 +51,9 @@
 			line-height: 19px;
 
 			.inside_title {
-				color: $bright_blue;
+				/*color: $bright_blue; */
+				/* green color scheme*/
+				color: $link_color;
 				display: block;
 				margin-bottom: 7px;
 				font-size: 20px;
@@ -90,9 +100,11 @@
 	}
 }
 
-#comments, /*hides comments*/
-.post-meta, /*hides post author below event title*/
-.post-entries /*hides next and previous event links*/
- {
-     display: none;
+.single-event {
+	#comments, /*hides comments*/
+	.post-meta, /*hides post author below event title*/
+	.post-entries /*hides next and previous event links*/
+	 {
+	     display: none;
+	}
 }

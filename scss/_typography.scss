@@ -74,8 +74,13 @@
 
 /* basic styles */
 
-html, body.page, body, p, h1, h2, h3, h4, h5, strong {
+html, body.page, body, p, h1, h2, h3, h4, h5, strong,
+.gform_wrapper .description,
+.gform_wrapper .gfield_description,
+.gform_wrapper .gsection_description,
+.gform_wrapper .instruction {
 	color: $paragraph;
+    font-family: 'ars_maquette_pro';
 }
 
 body, p { font:300 14px/1.5em ;color:$paragraph; }
@@ -409,6 +414,12 @@ h2.board {
 
 }
 
+//hides the "you are here" msg and the icons.
+.breadcrumb-trail {
+	.trail-before, [class^="icon-"]:before { 
+		display: none;
+	}
+}
 
 /*blog typography*/
 #content div.post {
@@ -473,4 +484,35 @@ div.ginput_complex {
 	list-style-position: outside;
 	list-style-image: url("images/list_style_image_double_arrows.png") !important;
 	font-family: ars_maquette_pro, sans-serif;
+}
+
+/******** TOGGLES ********/
+
+.entry .shortcode-toggle h4 a {
+	padding: 3px 10px 3px 30px;
+	background-position:  1% 7px;
+	font-weight: normal;
+	font-weight: 500;
+	
+	/* &:before {
+		content: "\e058";
+		font-family: 'icomoon-pir';
+		padding-right: 5px;
+	} */
+}
+
+/******** buttons *********/
+
+a.button,
+a.comment-reply-link,
+#commentform #submit,
+.submit,
+input[type=submit],
+input.button,
+button.button,
+#wrapper .woo-sc-button {
+  background: $bright_green;
+  &:hover {
+  	background-color: $dark_green;
+  }
 }

@@ -6,17 +6,20 @@ footer#footer {
 		}
 	}
 
-	ul.bottom-nav-legal {
-		li {
-			float: left;
-			margin-left: 3em;
-		}
+	li {
+		float: left;
+		margin-left: 3em;
+	}
 
-		.icon-mail:before {
-				padding-right: 5px;
-				position: relative;
-				top: 1px;
-			}	
+	.icon-mail  {
+	    font-family: 'ars_maquette_pro';
+		&:before {
+			content: "\e015";
+			padding-right: 5px;
+			position: relative;
+			top: 1px;
+			font-family: 'icomoon-pir';
+		}
 	}
 }
 

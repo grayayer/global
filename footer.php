@@ -22,9 +22,11 @@
 		</div>
 
 		<div id="credit" class="col-right">
-			<ul class="bottom-nav-legal">
-				<li><span ></span><a class="icon-mail" href="<?php echo get_site_url(); ?>/contact/">Contact Us</a></li>
-			</ul>
+			<?php woo_footer_right(); ?>
+<!-- 			<ul class="bottom-nav-legal">
+				<li><span ></span>
+					<a class="icon-mail" href="<?php echo get_site_url(); ?>/contact/">Contact Us</a></li>
+			</ul> -->
 		</div>
 
 	</footer>
@@ -39,5 +41,10 @@
 
 <?php wp_footer(); ?>
 <?php woo_foot(); ?>
+
+
+<!-- placeholder for ie 9 and below -->
+<script src="<?php echo get_stylesheet_directory_uri()?>/js/placeholder-script.js"></script>
+
 </body>
 </html>

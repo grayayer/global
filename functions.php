@@ -20,9 +20,15 @@ function custom_nav_searchform () {
 }
 
 
-
-
-
+/* excludes the early adopters posts from the blog
+function exclude_early_adopters($query) {
+if ( $query->is_home() ) {
+$query->set('cat', '-248'); //include the id of the cateogry here, that's all you have to modify.
+}
+return $query;
+}
+add_filter('pre_get_posts', 'exclude_early_adopters');
+*/
 
 //Include SVGeezy
 function my_scripts_method() {
@@ -31,5 +37,13 @@ function my_scripts_method() {
 }
 
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
+
+/* custom excerpt length
+function custom_excerpt_length( $length ) {
+return 40;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+*/
+
 
 ?>

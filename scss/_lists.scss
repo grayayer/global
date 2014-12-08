@@ -1,0 +1,49 @@
+/* ROUNDED LISTS, like in the side 'lastest 5 expressions of interest' */
+
+ol.rounded-list  {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 0em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+
+	a {
+	    position: relative;
+	    display: block;
+	    padding: .4em .4em .4em 1.4em;
+	    *padding: .4em;
+	    margin: .5em 0 .5em 1em;
+	    background: transparent;
+	    color: $paragraph;
+	    font-weight: 500;
+	    text-decoration: none;
+	    border-radius: .3em;
+	    transition: all .3s ease-out;
+
+	    &:hover{
+    		background: #eee;
+		}
+
+		&:before{
+		    content: counter(li);
+		    counter-increment: li;
+		    position: absolute; 
+		    top: 50%;
+		    margin-top: -.9em;
+		    background: $paragraph;
+		    height: 1.5em;
+		    width: 1.5em;
+		    line-height: 1.5em;
+		    border: 2px solid #fff;
+		    color: #FFF;
+		    text-align: center;
+		    font-weight: bold;
+		    border-radius: 1.5em;
+		    transition: all .3s ease-out;
+		    left: -1em;
+		}
+	}
+}	
+

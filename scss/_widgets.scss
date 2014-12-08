@@ -2,12 +2,97 @@
  * WIDGET STYLINGS
  * ===============================================*/
 
+/* widgets */
+.widget.latest-EOIs, .widget.sidebar_form {
+	padding: 2em;
+	border-radius: .75em;
+
+	h3 {
+		font-weight: 600;
+		font-weight: bold;
+	}
+
+	/*etrigue EOI sidebar form*/
+	form#etrReg.sidebar_form {
+		input {
+			width: 95%;
+			border: none;
+			color: $bright_blue;
+
+			&.button {
+				width: initial;
+			}
+
+			@include placeholder {
+				color: $bright_blue;
+			}
+			@include placeholder-focus {
+				font-size: 0px;
+			}		
+		}
+	}
+}
+
+
+.widget.widget_recent_entries ul li {
+	border: none;
+	padding-bottom: 0;
+	list-style: none;
+
+	&:before {
+		font-family: 'icomoon-pir';
+		content: "\e617";
+		padding-right: 5px;
+		text-decoration: none !important;
+		color: #a7ddc1;
+		display: block;
+		float: left;
+		position: relative;
+		top: 2px;
+	}
+}
+
+.widget.sidebar_form {
+	background: $bright_blue;
+}
+
+.widget.latest-EOIs {
+	background: #abd8ed;
+}
+
 #text-2 h3 {
 	letter-spacing: -.05em;
 }
 
 #text-6 {
-	text-align: right;
-	position: relative;
-	top: 9px;
+	margin-right: 25px;
 }
+
+#text-7, #text-8 /*the language switcher */ {
+	position: relative;
+	top: 7px;
+}
+
+@media only screen and (min-width:980px) {
+	header .header-widget { 
+		width: 60%;
+	}
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1015px) {
+	#text-6 {
+		margin: 15px 0 0 0;
+	}
+}
+
+@media only screen and (max-width:525px) {
+	#text-6 {
+		margin: 15px 0 0 0;
+	}
+	#text-7, #text-8 /*the language switcher */ {
+		position: relative;
+		top: 0;
+	}
+}
+

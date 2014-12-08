@@ -1,0 +1,24 @@
+<form name="etrReg" id="etrReg" class="sidebar_form" action="" method="post">
+<input type="hidden" name="espFormID" value="1" />
+<input placeholder="Organisation Name*" type="text" name="x_udf_marcom_company249" maxlength="100" size="25" value="" />
+<input placeholder="Email*" type="text" name="x_emailaddress" maxlength="250" size="25" value="" />
+<input placeholder="Full Name*" type="text" name="x_udf_full_name254" maxlength="100" size="25" value="" />
+<input class="hidden" type="text" name="x_udf_marcom_contact_type245" maxlength="100" size="25" value="NGO Newsletter" />
+<input class="hidden" type="text" name="x_udf_marcom_tld246" maxlength="50" size="25" value="NGO" />
+<input class="hidden" type="text" name="x_udf_marcom_source247" maxlength="100" size="25" value="Sidebar Short EOI Form" />
+<div class="checkbox" style="display:block; margin-bottom:10px;"><input name="x_udf_featured_257" type="checkbox" value="yes" id="choice_16_1" tabindex="16" style="width: 6%; margin-bottom: 0;"><label class="normal_weight" style="font-size: .9em;">I agree to having the name of my organisation featured on the .ngo|.ong websites, emails and other marketing materials.</label></div>
+<!--Additional_eTrigue_Fields-->
+<input type="button"  value="submit" class=button onClick="etr_submit();" id="etrSubmit" />
+</form>
+<script type="text/javascript">
+var etr_sb=document.getElementById("etrSubmit");
+function etr_ls(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.src=a;c.type="text/javascript";b.appendChild(c);}
+function etr_submit(){var err=false,msg="The following errors were found:\n\n";
+if(etr_empty(document.etrReg.x_emailaddress.value)){err=true;msg+='-E-mail is Required.\n';}
+if(etr_empty(document.etrReg.x_emailaddress.value)||!etr_valid(document.etrReg.x_emailaddress.value)){err=true;msg+='-Email Address is Invalid.\n';}
+if(etr_empty(document.etrReg.x_udf_full_name254.value)){err=true;msg+='-Full Name is Required.\n';}
+if(etr_empty(document.etrReg.x_udf_marcom_company249.value)){err=true;msg+='-Marcom Company is Required.\n';}
+if(err==true){alert(msg);}else{var etrigueForm=new EtrigueForm(1209);etr_sb.disabled=true;etrigueFormSuccess=false;etrigueForm.submitClassic("etrReg",function(dat){if(dat.err){etr_sb.disabled=false;return;}etrigueFormSuccess=true;if(dat.thankYouPage){if(dat.repost){document.etrReg.action=dat.thankYouPage;document.etrReg.submit();}else{window.location=dat.thankYouPage;}}});}}
+function etr_trim(a){a=a.replace(/^\s+/,"");for(var b=a.length-1;b>=0;b--){if(/\S/.test(a.charAt(b))){a=a.substring(0,b+1);break}}return a;}function etr_empty(a){return a?(a=etr_trim(a),0===a.length):!0;}function etr_valid(a){var b=/^([a-zA-Z0-9]+[a-zA-Z0-9_\-\.]*\@([a-zA-Z0-9]+[a-zA-Z0-9\_-]*\.)+[a-zA-Z0-9]+)$/;return b.test(a)?!0:!1;}function etr_isint(a){return parseFloat(a)!=parseInt(a)||isNaN(a)?!1:!0;}function etr_ischkd(a){var i,b=document.getElementsByName(a);for(i=0;i<b.length;i++){if(b[i].checked){return true;}}}
+etr_ls("http://trk.etrigue.com/etrigueForm.js");
+</script>
